@@ -1,0 +1,92 @@
+%______________________________________________________________________________________________________________________
+\documentclass[margin,line]{resume}
+%\textheight 275mm
+\usepackage{etaremune}
+\usepackage{marvosym}
+\usepackage{color}
+\usepackage{wasysym}
+\usepackage{tfrupee}  
+\usepackage{hyperref}
+\usepackage{fullpage}
+\addtolength{\oddsidemargin}{-0.9in}
+% \addtolength{\evensidemargin}{-.9in}
+\addtolength{\topmargin}{-0.25in}
+\addtolength{\textwidth}{0.6in}
+\addtolength{\textheight}{0.75in}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newenvironment{benumerate}[1]{
+    \let\oldItem\item
+    \def\item{\addtocounter{enumi}{-2}\oldItem}
+    \begin{enumerate}
+    \setcounter{enumi}{#1}
+    \addtocounter{enumi}{1}
+}{
+    \end{enumerate}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%______________________________________________________________________________________________________________________
+\begin{document}
+\name{\Large Sivaram Ambikasaran \hspace{25mm} \Letter \small sivaambi@alumni.stanford.edu \hspace{20mm} \url{http://sivaramambikasaran.com/}}
+
+\begin{resume}
+\section{\mysidestyle Academic appointment}
+\textbf{Assistant Professor, \hfill \textbf{August 2017 -- Present}\\
+Department of Mathematics,\\
+Indian Institute of Technology Madras,\\
+Chennai - 600 036}
+%_________________________________________________________________________________________________________________________________________
+	% Education
+	\section{\mysidestyle Previous appointments}
+	
+	\textbf{Indian Institute of Science} \hfill \textbf{April 2016 -- August 2017}\\
+	Assistant Professor, Department of Computational \& Data Sciences
+	
+	\textbf{ICTS, Tata Institute of Fundamental Research} \hfill \textbf{Jul 2015 -- Mar 2016}\\
+	Faculty, Interdisciplinary and Applied Mathematics
+
+	\textbf{Courant Institute of Mathematical Sciences, New York University} \hfill \textbf{Aug 2013 -- May 2015}\\
+	Assistant Professor, Department of Mathematics
+
+	\section{\mysidestyle Education}
+	\textbf{Stanford University} \hfill \textbf{Sep 2007 -- Jun 2013}
+	\begin{itemize}
+	\item	Doctor of Philosophy, Institute for Computational and Mathematical Engineering\\
+	\emph{Thesis Title: Fast Algorithms for Dense Numerical Linear Algebra and Applications.}\\
+	\emph{Advisor: Prof. Eric Darve.}
+	\item	Master of Science, Statistics
+	\item	Master of Science, Institute for Computational and Mathematical Engineering
+	\end{itemize}
+	\textbf{Indian Institute of Technology Madras} \hfill \textbf{Jul 2002 -- Jun 2007}
+	\begin{itemize}
+	\item	Master of Technology, Aerospace Engineering
+	\item	Bachelor of Technology, Aerospace Engineering
+	\end{itemize}
+	\vspace{-3 mm}
+
+%_________________________________________________________________________________________________________________________________________
+	% Research
+	\section{\mysidestyle Research}
+Numerical Analysis, Numerical linear algebra, Fast algorithms, Approximation theory with applications to Inverse problems, Scattering, Computational statistics, Material Homogenization, Data assimilation, Filtering.
+
+%_________________________________________________________________________________________________________________________________________
+	% Teaching experience
+
+	\section{\mysidestyle Teaching}
+	\href{http://sivaramambikasaran.com/teaching/}{Click here for the list of courses taught by me}
+	
+	\section{\mysidestyle Publications}
+	\href{https://scholar.google.co.in/citations?user=h2hgRJoAAAAJ&hl=en}{Click here for the list of articles published by me}
+	
+	\section{\mysidestyle Awards}
+	\href{http://sivaramambikasaran.com/awards/}{Click here for the list of awards awarded to me}
+	
+
+\end{resume}
+\end{document}
+
+
+%______________________________________________________________________________________________________________________
+% EOF
